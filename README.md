@@ -18,7 +18,7 @@
 1. Select "Start LAN World"
     - Spawn a staring block by running `/setblock 0 -1 0 minecraft:stone`
 1. Exit the game
-1. Delete the files in `/playerdata`
+1. Delete the files in `/achivements`, `/playerdata`, and `stats`
 1. Open the save using Universal [Minecraft Editor](https://www.universalminecrafteditor.com/)
 1. In the World Settings section, set/verify:
     - Difficulty: 2
