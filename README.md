@@ -1,17 +1,5 @@
 # CopeCraft
 
-## Install Datapack(s)
-1. Open Minecraft Java Edition
-1. Select "Singleplayer"
-1. Select "Create New World"
-1. Select "Data Packs"
-1. Select "Open Pack Folder"
-1. Copy from source to the new window
-1. Close the window and return to Minecraft
-1. In the "Available" pane, hover over the newly added datapack
-1. Select the "⏵" (right pointing triangle)
-1. Select "Done"
-
 ## Creating an "Empty" Map
 1. Open Minecraft Java Edition
 1. Select "Singleplayer"
