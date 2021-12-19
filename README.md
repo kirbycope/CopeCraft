@@ -29,3 +29,14 @@
     - SpawnY: 0
     - SpawnZ: 0
 1. [Optional] Hardcore is {Difficulty: 3, GameType: 0, Hardcore: 1}
+
+### Notes
+
+/give @s debug_stick
+
+/summon minecraft:pillager ~ ~ ~ {Rotation:90f,NoAI:1}
+
+/playsound minecraft:ui.button.click player @s
+
+/title @s actionbar "Title"
+
