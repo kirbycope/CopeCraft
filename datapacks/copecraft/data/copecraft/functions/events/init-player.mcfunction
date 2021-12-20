@@ -1,3 +1,7 @@
+# My son is adorable
+gamemode creative RedStarLord3097
+item replace entity @s[name="RedStarLord3097"] armor.head with minecraft:cake{"display":{"Name":'[{"text":"To Richie:","color":"red","bold":true,"italic":false}]',"Lore":['{"text":"I love you"}']}}
+
 #tellraw @a ["",{"selector":"@s"},{"text":" just logged in for the first time!"}]
 
 # Set Quest tracker to 0
