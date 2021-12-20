@@ -13,3 +13,6 @@ tag @a[tag=!init] add init
 # if copecraft-quest-id = 0 and copecraft-trigger = 1...
 # then start first quest (the link in the book was clicked)
 execute if entity @a[scores={copecraft-quest-id=0,copecraft-trigger=1}] run function copecraft:quests/01
+
+# if copecraft-quest-id = 1 and copecraft-wheat-planted=3...
+# then advance quest chain (3 seeds were planted)
