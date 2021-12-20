@@ -9,3 +9,15 @@ give @s written_book{author:"Timothy Cope",title:"A Letter",pages:['["Greetings,
 # Announce game phase
 title @s subtitle {"text":"The family farm","color":"gray","italic":true}
 title @s title {"text":"Halfhill","bold":true}
+
+# Create a quest tracker of sorts
+bossbar add copecraft:bossbar1 "Honest Work"
+bossbar set copecraft:bossbar1 players @s
+scoreboard objectives add copecraft-quest dummy {"text":"Quests", "color":"gold"}
+scoreboard objectives setdisplay sidebar copecraft-quest
+scoreboard players set §cSeeds_planted copecraft-quest 0
+
+# TODO: As #done/#total changes, so does the "health bar" indicating progress
+
+# TODO: Complete quest
+#bossbar remove copecraft:bossbar1
