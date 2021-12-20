@@ -5,6 +5,8 @@ gamerule doInsomnia false
 gamerule doLimitedCrafting true
 gamerule forgiveDeadPlayers true
 
+setworldspawn -8 0 8
+
 # https://minecraft.fandom.com/wiki/Scoreboard
 
 # [Public] Scoreboard - Thing 1
