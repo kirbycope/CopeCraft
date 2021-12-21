@@ -43,3 +43,6 @@
 /scoreboard objectives add test minecraft.used:minecraft.wheat_seeds "Seeds Usedtest"
 /scoreboard objectives setdisplay sidebar test
 /scoreboard players set @s test 0
+
+
+#bossbar set copecraft:bossbar1-q01o01 name "Plant Seeds (1/3)"

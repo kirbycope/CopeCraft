@@ -7,6 +7,7 @@ item replace entity @s[name="RedStarLord3097"] armor.head with minecraft:cake{"d
 # Set Quest tracker to 0
 scoreboard objectives add copecraft-quest-id dummy "Quest ID"
 scoreboard players set @s copecraft-quest-id 0
+scoreboard players set @s copecraft-quest-objective 0
 
 # Deliever letter
 give @s written_book{author:"Timothy Cope",title:"A Letter",pages:['["Greetings,\\nI regret to inform you of the death of your great uncle Eric. As next of kin, you will inherit his property at Halfhill.\\nMy condolences,\\nTimothy Cope\\n\\n     [",{"text":"Begin Quest","color": "gold","clickEvent":{"action":"run_command","value":"/trigger copecraft-trigger add 1"}},{"text":"]"}]']}
