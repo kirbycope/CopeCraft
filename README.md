@@ -46,3 +46,6 @@
 
 
 #bossbar set copecraft:bossbar1-q01o01 name "Plant Seeds (1/3)"
+
+Level Up
+/playsound minecraft:ui.toast.challenge_complete master @a

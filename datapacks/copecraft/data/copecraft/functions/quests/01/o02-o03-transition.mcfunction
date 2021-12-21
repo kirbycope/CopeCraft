@@ -1,5 +1,7 @@
 # Transition from Quests 01's Objective 2 to Objective 3
 
+# Remove relevant scoreboard
+scoreboard objectives remove copecraft-wheat-seeds-used
 # Remove "current" Objective tracker
 bossbar remove copecraft:bossbar-q1o2
 # Set the Objective to "3"

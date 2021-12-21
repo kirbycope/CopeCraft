@@ -29,4 +29,4 @@ execute if entity @a[scores={copecraft-quest-objective=3,copecraft-wheat-mined=1
 execute if entity @a[scores={copecraft-quest-objective=3,copecraft-wheat-mined=2}] run bossbar set copecraft:bossbar-q1o3 value 66
 execute if entity @a[scores={copecraft-quest-objective=3,copecraft-wheat-mined=2}] run bossbar set copecraft:bossbar-q1o3 name "Harvest Wheat (2/3)"
 # (3/3)
-execute if entity @a[scores={copecraft-quest-objective=3,copecraft-wheat-mined=3..}] run function copecraft:quests/q01-end
+execute if entity @a[scores={copecraft-quest-objective=3,copecraft-wheat-mined=3..}] run function copecraft:quests/01/end

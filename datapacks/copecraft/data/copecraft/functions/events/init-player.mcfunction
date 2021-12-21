@@ -19,4 +19,4 @@ scoreboard players enable @s copecraft-trigger
 
 # Announce game phase
 title @s subtitle {"text":"The family farm","color":"gray","italic":true}
-title @s title {"text":"Halfhill","bold":true}
+title @s title {"text":"Halfhill"}
