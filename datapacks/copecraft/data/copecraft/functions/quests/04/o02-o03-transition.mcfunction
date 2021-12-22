@@ -16,6 +16,3 @@ team join suffix-oak-log-green §aCraft
 # [Bossbar] Objective Tracker - "Place Campfire"
 bossbar add copecraft:bossbar-q4o3 [{"text":"Objective: "},{"text":"Place Campfire ","color":"yellow"},{"text":"(0/1)"}]
 bossbar set copecraft:bossbar-q4o3 players @a
-
-give @a minecraft:item_frame{EntityTag:{Invisible:1b}}
-kill @e[type=item,nbt={Item:{id:"minecraft:item_frame"}}]
