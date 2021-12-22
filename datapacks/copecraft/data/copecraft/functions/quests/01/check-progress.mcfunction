@@ -18,15 +18,4 @@ execute if entity @a[scores={copecraft-quest-objective=2,copecraft-wheat-seeds-u
 execute if entity @a[scores={copecraft-quest-objective=2,copecraft-wheat-seeds-used=2}] run bossbar set copecraft:bossbar-q1o2 value 66
 execute if entity @a[scores={copecraft-quest-objective=2,copecraft-wheat-seeds-used=2}] run bossbar set copecraft:bossbar-q1o2 name [{"text":"Objective: "},{"text":"Plant Wheat Seeds ","color":"yellow"},{"text":"(2/3)"}]
 # (3/3)
-execute if entity @a[scores={copecraft-quest-objective=2,copecraft-wheat-seeds-used=3..}] run function copecraft:quests/01/o02-o03-transition
-
-## Objective  - "Harvest Wheat" ##
-
-# (1/3)
-execute if entity @a[scores={copecraft-quest-objective=3,copecraft-wheat-mined=1}] run bossbar set copecraft:bossbar-q1o3 value 33
-execute if entity @a[scores={copecraft-quest-objective=3,copecraft-wheat-mined=1}] run bossbar set copecraft:bossbar-q1o3 name [{"text":"Objective: "},{"text":"Harvest Wheat ","color":"yellow"},{"text":"(1/3)"}]
-# (2/3)
-execute if entity @a[scores={copecraft-quest-objective=3,copecraft-wheat-mined=2}] run bossbar set copecraft:bossbar-q1o3 value 66
-execute if entity @a[scores={copecraft-quest-objective=3,copecraft-wheat-mined=2}] run bossbar set copecraft:bossbar-q1o3 name [{"text":"Objective: "},{"text":"Harvest Wheat ","color":"yellow"},{"text":"(2/3)"}]
-# (3/3)
-execute if entity @a[scores={copecraft-quest-objective=3,copecraft-wheat-mined=3..}] run function copecraft:quests/01/end
+execute if entity @a[scores={copecraft-quest-objective=2,copecraft-wheat-seeds-used=3..}] run function copecraft:quests/01/end

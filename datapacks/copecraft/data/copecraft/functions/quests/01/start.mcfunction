@@ -26,10 +26,6 @@ team join suffix-wheat-seeds Find
 scoreboard objectives add copecraft-wheat-seeds-used minecraft.used:minecraft.wheat_seeds "Plant Wheat Seeds"
 scoreboard players set Plant copecraft-quest 8
 team join suffix-wheat-seeds Plant
-# [q1o3] Quest 1 Objective 3 - "Harvest Wheat"
-scoreboard objectives add copecraft-wheat-mined minecraft.mined:minecraft.wheat "Harvest Wheat"
-scoreboard players set Harvest copecraft-quest 7
-team join suffix-wheat Harvest
 
 # [Bossbar] Objective Tracker - Find Wheat Seeds
 bossbar add copecraft:bossbar-q1o1 [{"text":"Objective: "},{"text":"Find Wheat Seeds ","color":"yellow"},{"text":"(0/3)"}]
