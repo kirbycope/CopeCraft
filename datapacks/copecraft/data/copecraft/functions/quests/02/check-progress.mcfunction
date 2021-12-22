@@ -25,4 +25,4 @@ execute if entity @a[scores={copecraft-quest-objective=2,copecraft-oak-planks-cr
 
 ## Objective 3 - "Make Crafting Table" ##
 
-execute if entity @a[scores={copecraft-quest-objective=3,copecraft-crafting-table-crafted=1}] run function copecraft:quests/01/end
+execute if entity @a[scores={copecraft-quest-objective=3,copecraft-crafting-table-crafted=1}] run function copecraft:quests/02/end
