@@ -3,3 +3,4 @@ advancements/*.json
 playerdata/*.dat
 playerdata/*.dat_old
 stats/*.json
+serverconfig/*.toml
