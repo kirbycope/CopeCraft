@@ -35,6 +35,6 @@ scoreboard objectives add copecraft-crafting-table-crafted minecraft.crafted:min
 scoreboard players set Make copecraft-quest 7
 team join suffix-crafting-table Make
 
-# [Bossbar] Objective Tracker - Chop Wood Logs
+# [Bossbar] Objective Tracker - "Chop Wood Logs"
 bossbar add copecraft:bossbar-q2o1 [{"text":"Objective: "},{"text":"Chop Wood Logs ","color":"yellow"},{"text":"(0/3)"}]
 bossbar set copecraft:bossbar-q2o1 players @a

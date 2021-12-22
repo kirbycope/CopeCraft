@@ -19,3 +19,6 @@ execute if entity @a[scores={copecraft-quest-id=1}] run function copecraft:quest
 
 # if copecraft-quest-id = 2 ...
 execute if entity @a[scores={copecraft-quest-id=2}] run function copecraft:quests/02/check-progress
+
+# if copecraft-quest-id = 3 ...
+execute if entity @a[scores={copecraft-quest-id=3}] run function copecraft:quests/03/check-progress
