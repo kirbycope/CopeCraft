@@ -11,11 +11,15 @@ scoreboard objectives setdisplay sidebar copecraft-quest
 # Objective Format - White text
 team add suffix-oak-log
 team modify suffix-oak-log suffix {"text":" Oak Log"}
+team add suffix-campfire
+team modify suffix-campfire suffix {"text":" Campfire"}
 # Objective Format - Green text
 team add suffix-oak-log-green
 team modify suffix-oak-log-green suffix {"text":" Oak Log", "color":"green"}
+team add suffix-campfire-green
+team modify suffix-campfire-green suffix {"text":" Campfire", "color":"green"}
 # [q4o1] Quest 4 Objective 1 - "Furance Oak Log"
-scoreboard objectives add copecraft-charcoal-picked-up minecraft.picked_up:minecraft.charcoal "Furance Oak Log"
+scoreboard objectives add copecraft-charcoal-crafted minecraft.crafted:minecraft.charcoal "Furance Oak Log"
 scoreboard players set Furnace copecraft-quest 9
 team join suffix-oak-log Furnace
 # [q4o2] Quest 4 Objective 2 - "Craft Campfire"

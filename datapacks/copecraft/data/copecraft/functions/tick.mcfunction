@@ -2,6 +2,8 @@
 
 #particle heart 0 -1 0 0.5 0.5 0.5 0.01 1
 
+#give @a minecraft:item_frame{EntityTag:{Invisible:1b}}
+
 # check for dirt
 #execute as @s store result score @a copecraft-thing2 run clear @a minecraft:dirt 0
 #execute as @s if score @s copecraft-wheat-picked-up matches 1 run title @a actionbar "Timmy"
@@ -22,3 +24,6 @@ execute if entity @a[scores={copecraft-quest-id=2}] run function copecraft:quest
 
 # if copecraft-quest-id = 3 ...
 execute if entity @a[scores={copecraft-quest-id=3}] run function copecraft:quests/03/check-progress
+
+# if copecraft-quest-id = 4 ...
+execute if entity @a[scores={copecraft-quest-id=4}] run function copecraft:quests/04/check-progress
