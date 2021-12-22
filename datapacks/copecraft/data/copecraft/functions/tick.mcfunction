@@ -7,8 +7,8 @@
 #execute as @s if score @s copecraft-wheat-picked-up matches 1 run title @a actionbar "Timmy"
 
 # https://www.reddit.com/r/MinecraftCommands/wiki/questions/playerjoin#wiki_first_time
-#execute as @a[tag=!init] run function copecraft:events/init-player
-#tag @a[tag=!init] add init
+execute as @a[tag=!init] run function copecraft:events/init-player
+tag @a[tag=!init] add init
 
 # if copecraft-quest-id = 0 and copecraft-trigger = 1 ...
 # then start first quest (the link in the book was clicked)
