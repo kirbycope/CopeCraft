@@ -24,6 +24,6 @@ execute if entity @a[scores={copecraft-quest-objective=1,copecraft-stone-mined=7
 # (8/8)
 execute if entity @a[scores={copecraft-quest-objective=1,copecraft-stone-mined=8..}] run function copecraft:quests/03/o01-o02-transition
 
-## Objective  - "Craft Furnace" ##
+## Objective 2 - "Craft Furnace" ##
 
-execute if entity @a[scores={copecraft-quest-objective=3,copecraft-furnace-crafted=1}] run function copecraft:quests/03/end
+execute if entity @a[scores={copecraft-quest-objective=2,copecraft-furnace-crafted=1}] run function copecraft:quests/03/end

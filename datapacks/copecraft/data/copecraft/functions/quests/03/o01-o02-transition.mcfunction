@@ -11,8 +11,8 @@ scoreboard players reset Mine copecraft-quest
 team leave Mine
 # Add green text to Tracker
 scoreboard players set §aMine copecraft-quest 9
-team join suffix-wood-logs-green §aMine
+team join suffix-stone-green §aMine
 
-# [Bossbar] Objective Tracker - "Mine Stone Blocks"
-bossbar add copecraft:bossbar-q3o2 [{"text":"Objective: "},{"text":"Mine Stone Blocks ","color":"yellow"},{"text":"(0/8)"}]
+# [Bossbar] Objective Tracker - "Craft Furnace"
+bossbar add copecraft:bossbar-q3o2 [{"text":"Objective: "},{"text":" ","color":"yellow"},{"text":"(0/1)"}]
 bossbar set copecraft:bossbar-q3o2 players @a
