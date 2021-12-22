@@ -14,5 +14,5 @@ scoreboard players set §aMine copecraft-quest 9
 team join suffix-stone-green §aMine
 
 # [Bossbar] Objective Tracker - "Craft Furnace"
-bossbar add copecraft:bossbar-q3o2 [{"text":"Objective: "},{"text":"Craft Furance ","color":"yellow"},{"text":"(0/1)"}]
+bossbar add copecraft:bossbar-q3o2 [{"text":"Objective: "},{"text":"Craft Furnace ","color":"yellow"},{"text":"(0/1)"}]
 bossbar set copecraft:bossbar-q3o2 players @a
