@@ -32,5 +32,5 @@ scoreboard players set Harvest copecraft-quest 7
 team join suffix-wheat Harvest
 
 # [Bossbar] Objective Tracker - Find Wheat Seeds
-bossbar add copecraft:bossbar-q1o1 "Find Wheat Seeds (0/3)"
+bossbar add copecraft:bossbar-q1o1 [{"text":"Objective: "},{"text":"Find Wheat Seeds ","color":"yellow"},{"text":"(0/3)"}]
 bossbar set copecraft:bossbar-q1o1 players @a

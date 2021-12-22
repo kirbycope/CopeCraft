@@ -4,6 +4,6 @@
 gamerule doInsomnia false
 gamerule doLimitedCrafting true
 gamerule forgiveDeadPlayers true
-gamerule sendCommandFeedback false
+#gamerule sendCommandFeedback false
 
 setworldspawn -8 0 8

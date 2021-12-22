@@ -1,9 +1,3 @@
-# Set the Quest ID
-scoreboard players set @a copecraft-quest-id 2
-# Reset the Quest Objective
-scoreboard players set @a copecraft-quest-objective 1
-# Reset the player trigger
-scoreboard players set @a copecraft-trigger 0
 # Reset the Quest Tracker
 scoreboard players reset * copecraft-quest
 # Remove relevant scoreboard
@@ -16,3 +10,5 @@ title @s actionbar {"text":"5 XP","color":"dark_purple"}
 xp add @a 5 points
 tellraw @a {"text":"Quest completed.","color":"yellow"}
 tellraw @a {"text":"Experience gained: 5.","color":"yellow"}
+# Start Quest 2, automatically
+function copecraft:quests/02/start

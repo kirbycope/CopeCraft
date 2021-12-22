@@ -14,5 +14,5 @@ scoreboard players set §aFind copecraft-quest 9
 team join suffix-wheat-seeds-green §aFind
 
 # [Bossbar] Objective Tracker - "Plant Wheat Seeds"
-bossbar add copecraft:bossbar-q1o2 "Plant Wheat Seeds (0/3)"
+bossbar add copecraft:bossbar-q1o2 [{"text":"Objective: "},{"text":"Plant Wheat Seeds ","color":"yellow"},{"text":"(0/3)"}]
 bossbar set copecraft:bossbar-q1o2 players @a

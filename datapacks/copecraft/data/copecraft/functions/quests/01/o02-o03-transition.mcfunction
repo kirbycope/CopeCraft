@@ -14,5 +14,5 @@ scoreboard players set §aPlant copecraft-quest 8
 team join suffix-wheat-seeds-green §aPlant
 
 # [Bossbar] Objective Tracker - "Harvest Wheat"
-bossbar add copecraft:bossbar-q1o3 "Harvest Wheat (0/3)"
+bossbar add copecraft:bossbar-q1o3 [{"text":"Objective: "},{"text":"Harvest Wheat ","color":"yellow"},{"text":"(0/3)"}]
 bossbar set copecraft:bossbar-q1o3 players @a

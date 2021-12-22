@@ -1,6 +1,7 @@
 # My son is adorable
 gamemode creative RedStarLord3097
-item replace entity @s[name="RedStarLord3097"] armor.head with minecraft:cake{"display":{"Name":'[{"text":"To Richie:","color":"red","bold":true,"italic":false}]',"Lore":['{"text":"I love you"}']}}
+item replace entity @s[name="RedStarLord3097"] armor.head with minecraft:creeper_head{"display":{"Name":'[{"text":"To Richie:","color":"red","bold":true,"italic":false}]',"Lore":['{"text":"I love you"}']}}
+item replace entity @s[name="BlueStarLord488"] armor.head with minecraft:zombie_head{"display":{"Name":'[{"text":"To Joey:","color":"red","bold":true,"italic":false}]',"Lore":['{"text":"I love you"}']}}
 
 # Set Quest tracker to 0
 scoreboard objectives add copecraft-quest-id dummy "Quest ID"
