@@ -13,6 +13,6 @@ scoreboard players set §a1 copecraft-quest 1
 team modify q5o1 suffix {"text":". Find Wheat Seeds", "color": "green"}
 team join q5o1 §a1
 
-# [Bossbar] Objective Tracker - "Till Soil"
-bossbar add copecraft:bossbar-q5o2 [{"text":"Objective: "},{"text":"Till Soil","color":"yellow"},{"text":" (0/3)"}]
+# [Bossbar] Objective Tracker - "Plant Wheat Seeds"
+bossbar add copecraft:bossbar-q5o2 [{"text":"Objective: "},{"text":"Plant Wheat Seeds","color":"yellow"},{"text":" (0/3)"}]
 bossbar set copecraft:bossbar-q5o2 players @a

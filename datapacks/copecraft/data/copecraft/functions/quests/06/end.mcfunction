@@ -3,7 +3,7 @@ scoreboard players reset * copecraft-quest
 # Remove relevant scoreboard
 scoreboard objectives remove copecraft-wheat-used
 # Remove "current" Objective tracker
-bossbar remove copecraft:bossbar-q5o2
+bossbar remove copecraft:bossbar-q6o2
 # Quest Reward
 playsound minecraft:block.note_block.chime master @a
 title @s actionbar {"text":"5 XP","color":"dark_purple"}
