@@ -26,6 +26,6 @@ team add q5o2
 team modify q5o2 suffix {"text":". Craft Bread"}
 team join q5o2 2
 
-# [Bossbar] Objective Tracker - "Find Wheat Seeds"
-bossbar add copecraft:bossbar-q5o1 [{"text":"Objective: "},{"text":"Craft Bread","color":"yellow"},{"text":" (0/1)"}]
+# [Bossbar] Objective Tracker - "Harvest Wheat"
+bossbar add copecraft:bossbar-q5o1 [{"text":"Objective: "},{"text":"Harvest Wheat","color":"yellow"},{"text":" (0/1)"}]
 bossbar set copecraft:bossbar-q5o1 players @a
