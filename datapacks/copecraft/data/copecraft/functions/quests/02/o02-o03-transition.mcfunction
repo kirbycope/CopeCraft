@@ -10,7 +10,7 @@ scoreboard players set @a copecraft-quest-objective 3
 scoreboard players reset 2 copecraft-quest
 # Add green text to Tracker
 scoreboard players set §a2 copecraft-quest 1
-team modify q2o2 suffix {"text":". Craft Wooden Pickaxe", "color": "green"}
+team modify q2o2 suffix {"text":". Mine Stone", "color": "green"}
 team join q2o2 §a2
 
 # [Bossbar] Objective Tracker - "Craft Furnace"
