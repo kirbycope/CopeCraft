@@ -1,4 +1,4 @@
-# Transition from Quests 02's Objective 2 to Objective 3
+# Transition from Quests 03's Objective 2 to Objective 3
 
 # Remove relevant scoreboard
 scoreboard objectives remove copecraft-campfire-crafted
