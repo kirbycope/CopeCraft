@@ -11,4 +11,4 @@ xp add @a 5 points
 tellraw @a {"text":"Quest completed.","color":"yellow"}
 tellraw @a {"text":"Experience gained: 5.","color":"yellow"}
 # Start Quest 6, automatically
-function copecraft:quests/06/start
+function copecraft:quests/07/start
