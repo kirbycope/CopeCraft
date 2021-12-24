@@ -14,5 +14,5 @@ team modify q4o1 suffix {"text":". Find Wheat Seeds", "color": "green"}
 team join q4o1 §a1
 
 # [Bossbar] Objective Tracker - "Plant Wheat Seeds"
-bossbar add copecraft:bossbar-q1o2 [{"text":"Objective: "},{"text":"Plant Wheat Seeds","color":"yellow"},{"text":" (0/3)"}]
-bossbar set copecraft:bossbar-q1o2 players @a
+bossbar add copecraft:bossbar-q4o2 [{"text":"Objective: "},{"text":"Plant Wheat Seeds","color":"yellow"},{"text":" (0/3)"}]
+bossbar set copecraft:bossbar-q4o2 players @a
