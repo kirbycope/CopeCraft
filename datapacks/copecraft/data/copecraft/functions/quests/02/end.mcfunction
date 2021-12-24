@@ -1,7 +1,7 @@
 # Reset the Quest Tracker
 scoreboard players reset * copecraft-quest
 # Remove relevant scoreboard
-scoreboard objectives remove copecraft-crafting-table-crafted
+scoreboard objectives remove copecraft-stone-crafted
 # Remove "current" Objective tracker
 bossbar remove copecraft:bossbar-q2o3
 # Quest Reward

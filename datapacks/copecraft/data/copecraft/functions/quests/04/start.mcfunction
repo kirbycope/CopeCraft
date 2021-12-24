@@ -1,3 +1,6 @@
+## Quest: Wheat ##
+tellraw @a [{"text":"Quest started: ","color": "yellow"},{"text":"Wheat","color": "yellow", "italic": true}]
+
 # Set the Quest ID
 scoreboard players set @a copecraft-quest-id 4
 # Set the Quest Objective
@@ -8,29 +11,21 @@ scoreboard players set @a copecraft-trigger 0
 # [Sidebar] Quest Tracker - Shows the "active" quest (and its objectives)
 scoreboard objectives add copecraft-quest dummy {"text":"Quest Tracker", "color":"gold"}
 scoreboard objectives setdisplay sidebar copecraft-quest
-# Objective Format - White text
-team add suffix-oak-log
-team modify suffix-oak-log suffix {"text":" Oak Log"}
-team add suffix-campfire
-team modify suffix-campfire suffix {"text":" Campfire"}
-# Objective Format - Green text
-team add suffix-oak-log-green
-team modify suffix-oak-log-green suffix {"text":" Oak Log", "color":"green"}
-team add suffix-campfire-green
-team modify suffix-campfire-green suffix {"text":" Campfire", "color":"green"}
-# [q4o1] Quest 4 Objective 1 - "Furance Oak Log"
-scoreboard objectives add copecraft-charcoal-crafted minecraft.crafted:minecraft.charcoal "Furance Oak Log"
-scoreboard players set Furnace copecraft-quest 9
-team join suffix-oak-log Furnace
-# [q4o2] Quest 4 Objective 2 - "Craft Campfire"
-scoreboard objectives add copecraft-campfire-crafted minecraft.crafted:minecraft.campfire "Craft Campfire"
-scoreboard players set Craft copecraft-quest 8
-team join suffix-campfire Craft
-# [q4o3] Quest 4 Objective 3 - "Place Campfire"
-scoreboard objectives add copecraft-campfire-used minecraft.used:minecraft.campfire "Place Campfire"
-scoreboard players set Place copecraft-quest 7
-team join suffix-campfire Place
 
-# [Bossbar] Objective Tracker - "Furnace Oak Log"
-bossbar add copecraft:bossbar-q4o1 [{"text":"Objective: "},{"text":"Furnace Oak Log ","color":"yellow"},{"text":"(0/1)"}]
+# Objective 1 - "Find Wheat Seeds"
+scoreboard objectives add copecraft-wheat-seeds-picked-up minecraft.picked_up:minecraft.wheat_seeds "Find Wheat Seeds"
+scoreboard players set 1 copecraft-quest 0
+team add q4o1
+team modify q4o1 suffix {"text":". Find Wheat Seeds"}
+team join q4o1 1
+
+# Objective 2 - "Plant Wheat Seeds"
+scoreboard objectives add copecraft-wheat-seeds-used minecraft.used:minecraft.wheat_seeds "Plant Wheat Seeds"
+scoreboard players set 2 copecraft-quest 0
+team add q4o2
+team modify q4o2 suffix {"text":". Plant Wheat Seeds"}
+team join q4o2 2
+
+# [Bossbar] Objective Tracker - "Find Wheat Seeds"
+bossbar add copecraft:bossbar-q4o1 [{"text":"Objective: "},{"text":"Find Wheat Seeds","color":"yellow"},{"text":" (0/3)"}]
 bossbar set copecraft:bossbar-q4o1 players @a

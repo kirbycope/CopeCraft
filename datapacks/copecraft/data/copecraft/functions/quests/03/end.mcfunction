@@ -1,9 +1,9 @@
 # Reset the Quest Tracker
 scoreboard players reset * copecraft-quest
 # Remove relevant scoreboard
-scoreboard objectives remove copecraft-stone-crafted
+scoreboard objectives remove copecraft-campfire-used
 # Remove "current" Objective tracker
-bossbar remove copecraft:bossbar-q3o2
+bossbar remove copecraft:bossbar-q3o3
 # Quest Reward
 playsound minecraft:block.note_block.chime master @a
 title @s actionbar {"text":"5 XP","color":"dark_purple"}

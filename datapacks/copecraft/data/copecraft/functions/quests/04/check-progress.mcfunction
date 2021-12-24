@@ -1,9 +1,21 @@
-## Objective 1 - "Furnace Oak Log" ##
+## Objective 1 - "Find Wheat Seeds" ##
 
-execute if entity @a[scores={copecraft-quest-objective=1,copecraft-charcoal-crafted=1}] run function copecraft:quests/04/o01-o02-transition
+# (1/3)
+execute if entity @a[scores={copecraft-quest-objective=1,copecraft-wheat-seeds-picked-up=1}] run bossbar set copecraft:bossbar-q4o1 value 33
+execute if entity @a[scores={copecraft-quest-objective=1,copecraft-wheat-seeds-picked-up=1}] run bossbar set copecraft:bossbar-q4o1 name [{"text":"Objective: "},{"text":"Find Wheat Seeds","color":"yellow"},{"text":" (1/3)"}]
+# (2/3)
+execute if entity @a[scores={copecraft-quest-objective=1,copecraft-wheat-seeds-picked-up=2}] run bossbar set copecraft:bossbar-q4o1 value 66
+execute if entity @a[scores={copecraft-quest-objective=1,copecraft-wheat-seeds-picked-up=2}] run bossbar set copecraft:bossbar-q4o1 name [{"text":"Objective: "},{"text":"Find Wheat Seeds","color":"yellow"},{"text":" (2/3)"}]
+# (3/3)
+execute if entity @a[scores={copecraft-quest-objective=1,copecraft-wheat-seeds-picked-up=3..}] run function copecraft:quests/04/o01-o02-transition
 
-## Objective 2 - "Craft Campfire" ##
-execute if entity @a[scores={copecraft-quest-objective=2,copecraft-campfire-crafted=1}] run function copecraft:quests/04/o02-o03-transition
+## Objective 2 - "Plant Wheat Seeds" ##
 
-## Objective 3 - "Place Campfire" ##
-execute if entity @a[scores={copecraft-quest-objective=3,copecraft-campfire-used=1}] run function copecraft:quests/04/end
+# (1/3)
+execute if entity @a[scores={copecraft-quest-objective=2,copecraft-wheat-seeds-used=1}] run bossbar set copecraft:bossbar-q4o2 value 33
+execute if entity @a[scores={copecraft-quest-objective=2,copecraft-wheat-seeds-used=1}] run bossbar set copecraft:bossbar-q4o2 name [{"text":"Objective: "},{"text":"Plant Wheat Seeds","color":"yellow"},{"text":" (1/3)"}]
+# (2/3)
+execute if entity @a[scores={copecraft-quest-objective=2,copecraft-wheat-seeds-used=2}] run bossbar set copecraft:bossbar-q4o2 value 66
+execute if entity @a[scores={copecraft-quest-objective=2,copecraft-wheat-seeds-used=2}] run bossbar set copecraft:bossbar-q4o2 name [{"text":"Objective: "},{"text":"Plant Wheat Seeds","color":"yellow"},{"text":" (2/3)"}]
+# (3/3)
+execute if entity @a[scores={copecraft-quest-objective=2,copecraft-wheat-seeds-used=3..}] run function copecraft:quests/04/end

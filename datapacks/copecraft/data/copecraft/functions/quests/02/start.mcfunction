@@ -1,3 +1,6 @@
+## Quest: Stone ##
+tellraw @a [{"text":"Quest started: ","color": "yellow"},{"text":"Stone","color": "yellow", "italic": true}]
+
 # Set the Quest ID
 scoreboard players set @a copecraft-quest-id 2
 # Set the Quest Objective
@@ -8,33 +11,28 @@ scoreboard players set @a copecraft-trigger 0
 # [Sidebar] Quest Tracker - Shows the "active" quest (and its objectives)
 scoreboard objectives add copecraft-quest dummy {"text":"Quest Tracker", "color":"gold"}
 scoreboard objectives setdisplay sidebar copecraft-quest
-# Objective Format - White text
-team add suffix-wood-logs
-team modify suffix-wood-logs suffix {"text":" Wood Logs"}
-team add suffix-wood-planks
-team modify suffix-wood-planks suffix {"text":" Wood Planks"}
-team add suffix-crafting-table
-team modify suffix-crafting-table suffix {"text":" Crafting Table"}
-# Objective Format - Green text
-team add suffix-wood-logs-green
-team modify suffix-wood-logs-green suffix {"text":" Wood Logs","color":"green"}
-team add suffix-wood-planks-green
-team modify suffix-wood-planks-green suffix {"text":" Wood Planks","color":"green"}
-team add suffix-crafting-table-green
-team modify suffix-crafting-table-green suffix {"text":" Crafting Table","color":"green"}
-# [q2o1] Quest 2 Objective 1 - "Chop Wood Logs"
-scoreboard objectives add copecraft-oak-logs-mined minecraft.mined:minecraft.oak_log "Chop Wood Logs"
-scoreboard players set Chop copecraft-quest 9
-team join suffix-wood-logs Chop
-# [q2o2] Quest 2 Objective 2 - "Craft Wood Planks"
-scoreboard objectives add copecraft-oak-planks-crafted minecraft.crafted:minecraft.oak_planks "Craft Wood Planks"
-scoreboard players set Craft copecraft-quest 8
-team join suffix-wood-planks Craft
-# [q2o3] Quest 2 Objective 3 - "Make Crafting Table"
-scoreboard objectives add copecraft-crafting-table-crafted minecraft.crafted:minecraft.crafting_table "Make Crafting Table"
-scoreboard players set Make copecraft-quest 7
-team join suffix-crafting-table Make
 
-# [Bossbar] Objective Tracker - "Chop Wood Logs"
-bossbar add copecraft:bossbar-q2o1 [{"text":"Objective: "},{"text":"Chop Wood Logs ","color":"yellow"},{"text":"(0/3)"}]
+# Objective 1 - "Craft Wooden Pickaxe"
+scoreboard objectives add copecraft-crafted-wooden-pickaxe minecraft.crafted:minecraft.wooden_pickaxe "Craft Wooden Pickaxe"
+scoreboard players set 1 copecraft-quest 0
+team add q2o1
+team modify q2o1 suffix {"text":". Craft Wooden Pickaxe"}
+team join q2o1 1
+
+# Objective 2 - "Mine Stone"
+scoreboard objectives add copecraft-stone-mined minecraft.mined:minecraft.stone "Mine Stone"
+scoreboard players set 2 copecraft-quest 0
+team add q2o2
+team modify q2o2 suffix {"text":". Mine Stone"}
+team join q2o2 2
+
+# Objective 3 - "Craft Furnace"
+scoreboard objectives add copecraft-furnace-crafted minecraft.crafted:minecraft.furnace "Craft Furnace"
+scoreboard players set 3 copecraft-quest 0
+team add q2o3
+team modify q2o3 suffix {"text":". Craft Furnace"}
+team join q2o3 3
+
+# [Bossbar] Objective Tracker - "Craft Wooden Pickaxe"
+bossbar add copecraft:bossbar-q2o1 [{"text":"Objective: "},{"text":"Craft Wooden Pickaxe","color":"yellow"},{"text":" (0/1)"}]
 bossbar set copecraft:bossbar-q2o1 players @a
