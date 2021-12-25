@@ -3,5 +3,4 @@
 # https://minecraft.fandom.com/wiki/Game_rule
 gamerule forgiveDeadPlayers true
 gamerule sendCommandFeedback true
-gamemode creative Kirbycope
 gamerule doDaylightCycle false
