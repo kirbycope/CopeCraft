@@ -1,8 +1,11 @@
 # `minecraft:tick` tag runs every tick at the start of the tick.
 
+# Check player enters the shipwreck store
+execute positioned -42 1 -42 as @a[distance=..1] at @s run function copecraft:events/enter-ship-store
+
 # https://www.reddit.com/r/MinecraftCommands/wiki/questions/playerjoin#wiki_first_time
-execute as @a[tag=!init] run function copecraft:events/init-player
-tag @a[tag=!init] add init
+#execute as @a[tag=!init] run function copecraft:events/init-player
+#tag @a[tag=!init] add init
 
 # if copecraft-quest-id = 0 and copecraft-trigger = 1 ...
 # then start first quest (the link in the book was clicked)
