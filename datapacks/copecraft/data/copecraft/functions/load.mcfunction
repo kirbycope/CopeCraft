@@ -2,12 +2,12 @@
 
 # https://minecraft.fandom.com/wiki/Game_rule
 gamerule forgiveDeadPlayers true
-#gamerule sendCommandFeedback false
-#gamerule doDaylightCycle true
+gamerule sendCommandFeedback false
+gamerule doDaylightCycle true
 
 # Development Settings
-gamerule sendCommandFeedback true
-gamerule doDaylightCycle false
+#gamerule sendCommandFeedback true
+#gamerule doDaylightCycle false
 
 ## NPCs ##
 

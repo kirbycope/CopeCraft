@@ -1,8 +1,8 @@
 # `minecraft:tick` tag runs every tick at the start of the tick.
 
 # https://www.reddit.com/r/MinecraftCommands/wiki/questions/playerjoin#wiki_first_time
-#execute as @a[tag=!init] run function copecraft:events/init-player
-#tag @a[tag=!init] add init
+execute as @a[tag=!init] run function copecraft:events/init-player
+tag @a[tag=!init] add init
 
 
 ## NPCs ##
