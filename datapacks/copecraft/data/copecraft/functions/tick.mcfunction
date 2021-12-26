@@ -4,10 +4,12 @@
 execute positioned -42 1 -42 as @a[distance=..1] at @s run function copecraft:events/enter-ship-store
 # Check player leaves the shipwreck store
 execute positioned -42 316 -37 as @a[distance=..1] at @s run tp @s -42 1 -40
+# Ensure "Timmy and Tommy" are kids
+execute as @e[type=villager,tag=baby,nbt={Age:-1}] run data merge entity @s {Age:-1000000}
 
 # https://www.reddit.com/r/MinecraftCommands/wiki/questions/playerjoin#wiki_first_time
-#execute as @a[tag=!init] run function copecraft:events/init-player
-#tag @a[tag=!init] add init
+execute as @a[tag=!init] run function copecraft:events/init-player
+tag @a[tag=!init] add init
 
 # if copecraft-quest-id = 0 and copecraft-trigger = 1 ...
 # then start first quest (the link in the book was clicked)
