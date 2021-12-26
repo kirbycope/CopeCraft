@@ -3,7 +3,7 @@
 # Check player enters the shipwreck store
 execute positioned -42 1 -42 as @a[distance=..1] at @s run function copecraft:events/enter-ship-store
 # Check player leaves the shipwreck store
-execute positioned -42 316 -37 as @a[distance=..1] at @s run tp @s -42 1 -39
+execute positioned -42 316 -37 as @a[distance=..1] at @s run tp @s -42 1 -40
 
 # https://www.reddit.com/r/MinecraftCommands/wiki/questions/playerjoin#wiki_first_time
 #execute as @a[tag=!init] run function copecraft:events/init-player
