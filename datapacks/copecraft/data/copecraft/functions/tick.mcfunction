@@ -8,10 +8,10 @@ tag @a[tag=!init] add init
 ## NPCs ##
 
 # Tim[my]
-execute positioned -44 316 -42 as @a[distance=..1.5,scores={copecraft-talked-to-villager=1..}] at @s run tellraw @a {"text":"Timmy!"}
+execute positioned -44 316 -42 as @a[distance=..1.5,scores={copecraft-talked-to-villager=1..}] at @s run function copecraft:events/interact-tim
 
 # Tom[my]
-execute positioned -41 316 -43 as @a[distance=..1.5,scores={copecraft-talked-to-villager=1..}] at @s run tellraw @a {"text":"Tommy!"}
+execute positioned -41 316 -43 as @a[distance=..1.5,scores={copecraft-talked-to-villager=1..}] at @s run function copecraft:events/interact-tom
 
 
 ## Shops ##
