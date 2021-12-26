@@ -7,9 +7,11 @@ tag @a[tag=!init] add init
 
 ## NPCs ##
 
-## Timmy
-tellraw @a[scores={copecraft-talked-to-villager=1..}] {"text":"What's your poison?"}
-execute if entity @a[scores={copecraft-talked-to-villager=1..}] run scoreboard players set @s copecraft-talked-to-villager 0
+# Tim[my]
+execute positioned -44 316 -42 as @a[distance=..1,scores={copecraft-talked-to-villager=1..}] at @s run tellraw @a {"text":"Timmy!"}
+
+# Tom[my]
+execute positioned -41 316 -43 as @a[distance=..1,scores={copecraft-talked-to-villager=1..}] at @s run tellraw @a {"text":"Tommy!"}
 
 
 ## Shops ##
