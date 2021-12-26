@@ -1,15 +1,26 @@
 # `minecraft:tick` tag runs every tick at the start of the tick.
 
+# https://www.reddit.com/r/MinecraftCommands/wiki/questions/playerjoin#wiki_first_time
+#execute as @a[tag=!init] run function copecraft:events/init-player
+#tag @a[tag=!init] add init
+
+
+## NPCs ##
+
+## Timmy
+tellraw @a[scores={copecraft-talked-to-villager=1..}] {"text":"What's your poison?"}
+execute if entity @a[scores={copecraft-talked-to-villager=1..}] run scoreboard players set @s copecraft-talked-to-villager 0
+
+
+## Shops ##
+
 # Check player enters the shipwreck store
 execute positioned -42 1 -42 as @a[distance=..1] at @s run function copecraft:events/enter-ship-store
 # Check player leaves the shipwreck store
 execute positioned -42 316 -37 as @a[distance=..1] at @s run tp @s -42 1 -40
-# Ensure "Timmy and Tommy" are kids
-execute as @e[type=villager,tag=baby,nbt={Age:-1}] run data merge entity @s {Age:-1000000}
 
-# https://www.reddit.com/r/MinecraftCommands/wiki/questions/playerjoin#wiki_first_time
-execute as @a[tag=!init] run function copecraft:events/init-player
-tag @a[tag=!init] add init
+
+## Quests ##
 
 # if copecraft-quest-id = 0 and copecraft-trigger = 1 ...
 # then start first quest (the link in the book was clicked)
