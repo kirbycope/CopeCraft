@@ -2,5 +2,5 @@
 
 # https://minecraft.fandom.com/wiki/Game_rule
 gamerule forgiveDeadPlayers true
-gamerule sendCommandFeedback true
+gamerule sendCommandFeedback false
 gamerule doDaylightCycle true
