@@ -7,11 +7,6 @@ tag @a[tag=!init] add init
 
 ## Menu(s) ##
 
-# Check if the Menu item in hand the player is not moving and the player is "shifting"
-execute if entity @a[tag=!menu,scores={copecraft-sneak-time=1..},nbt={Motion:[0.0,0.0,0.0],SelectedItem:{id:"minecraft:nether_star",tag:{display:{Name:'[{"text":"Menu","italic":false}]'}}}}] run function copecraft:menus/mule-open
-# Check if the player is moving so we can remove the menu tag
-execute if entity @a[tag=menu,scores={copecraft-sneak-time=0},nbt=!{Motion:[0.0,0.0,0.0]}] run function copecraft:menus/mule-close
-
 
 ## NPC(s) ##
 
