@@ -5,7 +5,14 @@ execute as @a[tag=!init] run function copecraft:events/init-player
 tag @a[tag=!init] add init
 
 
-## NPCs ##
+## Menu(s) ##
+
+# Check if the item in hand is 
+execute if entity @a[scores={carrot-stick-used=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:'[{"text":"Menu","italic":false}]'}}}}] run tellraw @a "Menu!"
+#execute if entity @a[scores={carrot-stick-used=1..}] run tellraw @a "Timmy!"
+
+
+## NPC(s) ##
 
 # Tim[my]
 execute positioned -44 316 -42 as @a[distance=..1.5,scores={copecraft-talked-to-villager=1..}] at @s run function copecraft:events/interact-tim
@@ -14,7 +21,7 @@ execute positioned -44 316 -42 as @a[distance=..1.5,scores={copecraft-talked-to-
 execute positioned -41 316 -43 as @a[distance=..1.5,scores={copecraft-talked-to-villager=1..}] at @s run function copecraft:events/interact-tom
 
 
-## Shops ##
+## Shop(s) ##
 
 # Check player enters the shipwreck store
 execute positioned -42 1 -42 as @a[distance=..1] at @s run function copecraft:events/enter-ship-store
@@ -22,7 +29,7 @@ execute positioned -42 1 -42 as @a[distance=..1] at @s run function copecraft:ev
 execute positioned -42 316 -37 as @a[distance=..1] at @s run tp @s -42 1 -40
 
 
-## Quests ##
+## Quest(s) ##
 
 # if copecraft-quest-id = 0 and copecraft-trigger = 1 ...
 # then start first quest (the link in the book was clicked)
