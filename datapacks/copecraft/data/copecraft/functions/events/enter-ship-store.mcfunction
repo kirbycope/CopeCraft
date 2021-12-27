@@ -7,8 +7,3 @@ title @s title {"text":""}
 # Music
 stopsound @a music
 playsound music_disc.wait music @p -42 316 -42
-
-# Notes
-# https://www.minecraftforum.net/forums/minecraft-java-edition/redstone-discussion-and/commands-command-blocks-and/2965170-talking-with-a-villager-solved
-# https://www.minecraftforum.net/forums/minecraft-java-edition/redstone-discussion-and/commands-command-blocks-and/2729180-create-dialouge-with-villager-by-right-click
-# https://www.minecraftforum.net/forums/minecraft-java-edition/redstone-discussion-and/commands-command-blocks-and/2922050-activating-tellraw-command-when-right-clicking
