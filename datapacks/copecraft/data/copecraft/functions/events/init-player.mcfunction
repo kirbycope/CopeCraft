@@ -17,10 +17,10 @@ scoreboard players set @s copecraft-talked-to-villager 0
 #give @s written_book{author:"Timothy Cope",title:"Property Deed",pages:['["",{"text":"--- FAMILY FARM ---\\n<< Property  Deed >>\\n------------------\\n\\nPossession of the farm at Halfhill is hereby granted to "},{"selector":"@s"},{"text":"."}]']}
 
 # Menu item
-item replace entity @p hotbar.8 with carrot_on_a_stick{display:{Name:'[{"text":"Menu","italic":false}]',Lore:['[{"text":"Use this item to open the menu.","italic":false}]']},HideFlags:1} 1
-# Add tracker for Menu item
-scoreboard objectives add carrot-stick-used minecraft.used:minecraft.carrot_on_a_stick
-scoreboard players set @s carrot-stick-used 0
+item replace entity @p hotbar.8 with nether_star{display:{Name:'[{"text":"Menu","italic":false}]',Lore:['[{"text":"Use this item to open the menu.","italic":false}]']},HideFlags:1} 1
+# Add tracker for sneaking
+scoreboard objectives add copecraft-sneak-time minecraft.custom:minecraft.sneak_time
+scoreboard players set @s copecraft-sneak-time 0
 
 # Deliver letter
 give @s written_book{author:"Timothy Cope",title:"A Letter",pages:['["Greetings,\\nI regret to inform you of the death of your great uncle Eric. As next of kin, you will inherit his property at Halfhill.\\nMy condolences,\\nTimothy Cope\\n\\n     [",{"text":"Begin Quest","color": "gold","clickEvent":{"action":"run_command","value":"/trigger copecraft-trigger add 1"}},{"text":"]"}]']}
