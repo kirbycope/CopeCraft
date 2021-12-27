@@ -1,4 +1,4 @@
-## Quest: Campfire ##
+## Quest: Farmland ##
 tellraw @a [{"text":"Quest started: ","color": "yellow"},{"text":"Farmland","color": "yellow", "italic": true}]
 
 # Set the Quest ID
