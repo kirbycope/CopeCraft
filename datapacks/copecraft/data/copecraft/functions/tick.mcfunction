@@ -7,6 +7,10 @@ tag @a[tag=!init] add init
 
 ## Menu(s) ##
 
+# Chest Menu - Open
+execute if entity @a[nbt={SelectedItem:{id:"minecraft:nether_star",tag:{display:{Name:'[{"text":"Menu","italic":false}]'}}}}] run function copecraft:menus/chest-menu-open
+# Chest Menu - [Force] close
+execute if entity @a[nbt=!{SelectedItem:{id:"minecraft:nether_star",tag:{display:{Name:'[{"text":"Menu","italic":false}]'}}}}] run function copecraft:menus/chest-menu-close
 
 ## NPC(s) ##
 
