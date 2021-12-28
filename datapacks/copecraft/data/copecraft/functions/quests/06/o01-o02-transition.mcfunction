@@ -13,8 +13,8 @@ scoreboard players set §a1 copecraft-quest 1
 team modify q6o1 suffix {"text":". Harvest Wheat", "color": "green"}
 team join q6o1 §a1
 
-# [Bossbar] Objective Tracker - "Bake Bread"
-bossbar add copecraft:bossbar-q6o2 [{"text":"Objective: "},{"text":"Bake Bread","color":"yellow"},{"text":" (0/1)"}]
+# [Bossbar] Objective Tracker - "Craft Bread"
+bossbar add copecraft:bossbar-q6o2 [{"text":"Objective: "},{"text":"Craft Bread","color":"yellow"},{"text":" (0/1)"}]
 bossbar set copecraft:bossbar-q6o2 players @a
 
 # Objective(s) completed: 1/2
