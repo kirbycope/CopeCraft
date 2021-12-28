@@ -9,6 +9,6 @@ execute if entity @a[scores={copecraft-quest-objective=1,copecraft-wheat-picked-
 # (3/3)
 execute if entity @a[scores={copecraft-quest-objective=1,copecraft-wheat-picked-up=3..}] run function copecraft:quests/06/o01-o02-transition
 
-## Objective 2 - "Bake Bread" ##
+## Objective 2 - "Craft Bread" ##
 
 execute if entity @a[scores={copecraft-quest-objective=2,copecraft-bread-crafted=1..}] run function copecraft:quests/06/end
