@@ -9,7 +9,7 @@ execute unless entity @e[name="Tim"] run summon villager -44 316 -42 {CustomName
 # NPC - Tom[my]
 #summon villager -41 316 -43 {CustomNameVisible:1b,CustomName:'{"text":"Tom","color":"red"}',Attributes:[{Name:"generic.knockback_resistance",Base:1},{Name:"generic.movement_speed",Base:.001}]}
 #summon villager ~ ~1 ~ {VillagerData:{profession:nitwit,level:2,type:savanna},Invulnerable:1,CustomName:"\"Tom\"",Offers:{Recipes:[{buy:{id:oak_log,Count:64},sell:{id:lava_bucket,Count:1},rewardExp:0b,maxUses:9999999}]}}
-execute unless entity @e[name="Tom"] run summon villager -44 316 -42 {CustomNameVisible:1b,CustomName:'{"text":"Tom","color":"red"}',Attributes:[{Name:"generic.knockback_resistance",Base:1},{Name:"generic.movement_speed",Base:.001}],VillagerData:{profession:nitwit,level:2,type:savanna},Offers:{Recipes:[{buy:{id:oak_log,Count:64},sell:{id:lava_bucket,Count:1},rewardExp:0b,maxUses:9999999}]}}
+execute unless entity @e[name="Tom"] run summon villager -41 316 -43 {CustomNameVisible:1b,CustomName:'{"text":"Tom","color":"red"}',Attributes:[{Name:"generic.knockback_resistance",Base:1},{Name:"generic.movement_speed",Base:.001}],VillagerData:{profession:nitwit,level:2,type:savanna},Offers:{Recipes:[{buy:{id:oak_log,Count:64},sell:{id:lava_bucket,Count:1},rewardExp:0b,maxUses:9999999}]}}
 
 
 # Announce game zone
