@@ -1,3 +1,6 @@
+# Tag player so this only runs for them once
+tag @a[tag=!init] add init
+
 # My boys are adorable
 gamemode creative RedStarLord3097
 item replace entity @s[name="RedStarLord3097"] armor.head with minecraft:creeper_head{"display":{"Name":'[{"text":"To Richie:","color":"red","bold":true,"italic":false}]',"Lore":['{"text":"I love you"}']}}

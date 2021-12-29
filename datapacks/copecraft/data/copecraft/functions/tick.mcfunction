@@ -2,7 +2,6 @@
 
 # https://www.reddit.com/r/MinecraftCommands/wiki/questions/playerjoin#wiki_first_time
 execute as @a[tag=!init] run function copecraft:events/init-player
-tag @a[tag=!init] add init
 
 
 ## Menu(s) ##
@@ -28,6 +27,11 @@ execute positioned -42 1 -42 as @a[distance=..1] at @s run function copecraft:ev
 # Check player leaves the shipwreck store
 execute positioned -42 316 -37 as @a[distance=..1] at @s run tp @s -42 1 -40
 
+# Check player enters the witch hut store
+execute positioned 68 3 67 as @a[distance=..1] at @s run function copecraft:events/enter-witch-hut-store
+execute positioned 67 316 65 as @a[distance=..1] at @s run tp @s 68 3 65
+
+# Check player leaves the witch hut store
 
 ## Quest(s) ##
 
