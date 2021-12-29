@@ -13,3 +13,6 @@ gamerule doDaylightCycle true
 
 # Menu Chest Minecart
 #summon chest_minecart -42 320 -42 {CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+
+# Duck, the chicken
+execute unless entity @e[name="Duck"] run summon minecraft:chicken 2 2 1 {CustomName:'{"text":"Duck","color":"yellow"}'}
