@@ -1,8 +1,8 @@
-## Objective 1 - "Craft Wooden Pickaxe" ##
+# ════ Objective 1 - "Craft Wooden Pickaxe" ════ #
 
 execute if entity @a[scores={copecraft-quest-objective=1,copecraft-crafted-wooden-pickaxe=1..}] run function copecraft:quests/02/o01-o02-transition
 
-## Objective 2 - "Mine Stone" ##
+# ════ Objective 2 - "Mine Stone" ════ #
 
 # (1/8)
 execute if entity @a[scores={copecraft-quest-objective=2,copecraft-stone-mined=1}] run bossbar set copecraft:bossbar-q2o2 value 12
@@ -28,6 +28,6 @@ execute if entity @a[scores={copecraft-quest-objective=2,copecraft-stone-mined=7
 # (8/8)
 execute if entity @a[scores={copecraft-quest-objective=2,copecraft-stone-mined=8..}] run function copecraft:quests/02/o02-o03-transition
 
-## Objective 3 - "Craft Furnace" ##
+# ════ Objective 3 - "Craft Furnace" ════ #
 
 execute if entity @a[scores={copecraft-quest-objective=3,copecraft-furnace-crafted=1..}] run function copecraft:quests/02/end

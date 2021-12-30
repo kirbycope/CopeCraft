@@ -1,4 +1,4 @@
-## Objective 1 - "Find Wheat Seeds" ##
+# ════ Objective 1 - "Find Wheat Seeds" ════ #
 
 # (1/3)
 execute if entity @a[scores={copecraft-quest-objective=1,copecraft-wheat-seeds-picked-up=1}] run bossbar set copecraft:bossbar-q5o1 value 33
@@ -9,7 +9,7 @@ execute if entity @a[scores={copecraft-quest-objective=1,copecraft-wheat-seeds-p
 # (3/3)
 execute if entity @a[scores={copecraft-quest-objective=1,copecraft-wheat-seeds-picked-up=3..}] run function copecraft:quests/05/o01-o02-transition
 
-## Objective 2 - "Plant Wheat Seeds" ##
+# ════ Objective 2 - "Plant Wheat Seeds" ════ #
 
 # (1/3)
 execute if entity @a[scores={copecraft-quest-objective=2,copecraft-wheat-seeds-used=1}] run bossbar set copecraft:bossbar-q5o2 value 33

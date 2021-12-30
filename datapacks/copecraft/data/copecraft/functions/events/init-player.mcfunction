@@ -2,7 +2,6 @@
 tag @a[tag=!init] add init
 
 # My boys are adorable
-gamemode creative RedStarLord3097
 item replace entity @s[name="RedStarLord3097"] armor.head with minecraft:creeper_head{"display":{"Name":'[{"text":"To Richie:","color":"red","bold":true,"italic":false}]',"Lore":['{"text":"I love you"}']}}
 item replace entity @s[name="BlueStarLord488"] armor.head with minecraft:zombie_head{"display":{"Name":'[{"text":"To Joey:","color":"red","bold":true,"italic":false}]',"Lore":['{"text":"I love you"}']}}
 
@@ -17,7 +16,7 @@ scoreboard objectives add copecraft-talked-to-villager minecraft.custom:minecraf
 scoreboard players set @s copecraft-talked-to-villager 0
 
 # Menu item
-item replace entity @p hotbar.8 with nether_star{display:{Name:'[{"text":"Menu","italic":false}]',Lore:['[{"text":"Use this item to open the menu.","italic":false}]']},HideFlags:1} 1
+#item replace entity @p hotbar.8 with nether_star{display:{Name:'[{"text":"Menu","italic":false}]',Lore:['[{"text":"Use this item to open the menu.","italic":false}]']},HideFlags:1} 1
 
 # [BUG] https://bugs.mojang.com/browse/MC-103171
 #give @s written_book{author:"Timothy Cope",title:"Property Deed",pages:['["",{"text":"--- FAMILY FARM ---\\n<< Property  Deed >>\\n------------------\\n\\nPossession of the farm at Halfhill is hereby granted to "},{"selector":"@s"},{"text":"."}]']}
@@ -31,8 +30,3 @@ scoreboard players enable @s copecraft-trigger
 # Announce game phase
 title @s subtitle {"text":"The family farm","color":"gray","italic":true}
 title @s title {"text":"Halfhill"}
-
-# Track day(s)
-scoreboard objectives add copecraft-days-gone dummy
-scoreboard players set @a copecraft-days-gone 0
-schedule function copecraft:events/new-day 1d
