@@ -7,12 +7,6 @@ gamerule sendCommandFeedback false
 gamerule doDaylightCycle true
 gamemode survival @a
 
-# ════ Development Settings ════ #
-
-#gamerule sendCommandFeedback true
-#gamerule doDaylightCycle false
-#gamemode creative @a
-
 # ════ NPCs ════ #
 
 # Duck, the chicken
