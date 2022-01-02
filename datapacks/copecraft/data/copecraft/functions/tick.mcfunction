@@ -7,9 +7,9 @@ execute as @a[tag=!init] run function copecraft:events/init-player
 # ════ Menu(s) ════ #
 
 # Chest Menu - Open
-execute if entity @a[nbt={SelectedItem:{id:"minecraft:nether_star",tag:{display:{Name:'[{"text":"Menu","italic":false}]'}}}}] run function copecraft:menus/chest-menu-open
+#execute if entity @a[nbt={SelectedItem:{id:"minecraft:nether_star",tag:{display:{Name:'[{"text":"Menu","italic":false}]'}}}}] run function copecraft:menus/chest-menu-open
 # Chest Menu - [Force] close
-execute if entity @a[nbt=!{SelectedItem:{id:"minecraft:nether_star",tag:{display:{Name:'[{"text":"Menu","italic":false}]'}}}}] run function copecraft:menus/chest-menu-close
+#execute if entity @a[nbt=!{SelectedItem:{id:"minecraft:nether_star",tag:{display:{Name:'[{"text":"Menu","italic":false}]'}}}}] run function copecraft:menus/chest-menu-close
 
 
 # ════ NPC(s) ════ #
@@ -52,8 +52,8 @@ execute if entity @a[scores={copecraft-quest-id=6}] run function copecraft:quest
 ## Sand box ##
 
 # Hover item over head
-execute unless entity @e[type=item,name="Emerald"] run execute at @a run summon item ~ ~2.2 ~ {Item:{id:"minecraft:emerald",Count:1},NoGravity:1b,PickupDelay:32767}
-execute at @a run tp @e[type=item,name="Emerald"] ~ ~2 ~
+#execute unless entity @e[type=item,name="Emerald"] run execute at @a run summon item ~ ~2.2 ~ {Item:{id:"minecraft:emerald",Count:1},NoGravity:1b,PickupDelay:32767}
+#execute at @a run tp @e[type=item,name="Emerald"] ~ ~2 ~
 
 # Hover particle over head
-execute at @a run particle minecraft:composter ~ ~2.2 ~ 0 0 0 0 0 normal
+#execute at @a run particle minecraft:composter ~ ~2.2 ~ 0 0 0 0 0 normal
