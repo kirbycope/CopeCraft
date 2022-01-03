@@ -70,3 +70,6 @@ I wanted a quest log, like most RPGs, so I cant track what the heck is going on 
 I have [some code](https://github.com/kirbycope/CopeCraft/wiki/Summon-Chest-Minecart-to-Your-Head) for summoning a "Menu Chest" to the player. There is a nice video by Cloud_Wolf on [how to do a chest menu](https://www.youtube.com/watch?v=OOuRyx0Ipe4). I joined the guy's Discord and he said he plans on doing an updated video with  tricks he finds himself using.
 </br>
 I also have  [some code](https://github.com/kirbycope/CopeCraft/wiki/Create-Particle-Over-Your-Head) for particles over your head and [some code](https://github.com/kirbycope/CopeCraft/wiki/Hover-Item-Over-Your-Head) for an item over your head. This is so a quest marker or shop keeper... something along those lines. I like to see what is possible and then operate within those parameters.
+
+### The End
+I wanted to see what I could do by the end of the year. This challenge was fun and motived me to start a Unity project. This project was fun and all and I can overcome the restrictions by joining the modding comminuty but my current employer uses Unity so I am going to take the oppertunity to learn that.
