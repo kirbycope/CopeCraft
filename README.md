@@ -8,7 +8,7 @@
 
 ## Background
 
-This started when I looked at updating [OneBlock](https://ijaminecraft.com/map/oneblock/)to work with the latest Minecraft version. As I started to dive into the code and study line-by-line I would google each command to find some documentation. Unfortunately, Mojang doesn't seem to offer a lot to that effect so I relied on fan wikis, forums, stack arqade, and youtube. Once I got comfortable with the code I decided that I actually wanted to make my own thing. We played a lot of OneBlock, SkyBlock, and Hypixel in 2021 so I started thinking about what was fun about those experiences.
+This started when I looked at updating [OneBlock](https://ijaminecraft.com/map/oneblock/) to work with the latest Minecraft version. As I started to dive into the code and study line-by-line I would google each command to find some documentation. Unfortunately, Mojang doesn't seem to offer a lot to that effect so I relied on fan wikis, forums, stack arqade, and youtube. Once I got comfortable with the code I decided that I actually wanted to make my own thing. We played a lot of OneBlock, SkyBlock, and Hypixel in 2021 so I started thinking about what was fun about those experiences.
 
 ### Game Design
 
