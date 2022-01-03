@@ -48,8 +48,10 @@ I added more quests. I even drew some post-it notes with Beetle from the Legend 
 #### Adding Non-Player Characters
 I wanted to add my boys to the game. We spent the summer playing a Hypixel SykBlock Co-op as a family and they loved playing Animal Crossing with mom before that. So Timmy and Tommy Nook we're added to the game!
 ![BoatCraft](/_documentation/boat-craft.png)
+
 I set a block at `42 -1 42` and and made a shipwreck standing up to serve as a store.
 ![Shipwreck Store](/_documentation/shipwreck-store.png)
+
 I tried having the Villagers as kids but they wouldn't do trades or even trigger the "TalkedToVillager" statistic. So, lorewise, they have been shipwrcked a while. They have a theme song that plays when you enter the store and colorful (a feature added in patch 1.16 IIRC) `title` text.
 
 #### Store Location
