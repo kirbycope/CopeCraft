@@ -62,3 +62,11 @@ I thought long and hard about what I needed (that they being traders might offer
 
 #### A New [Non-]Player Has Entered!
 I also wanted my wife to have a presence in the game. She was awesome helping me talk through gameplay and map design. Great feedback I wasn't always ready to hear. We love Studio Ghilbli and Zelda. So I eventually came around to using Kiki the witch and styling the [Witch Hut](https://minecraftpc.fandom.com/wiki/Witch_Hut)'s interior like those in [Link's Awakening](https://www.zeldadungeon.net/Zelda04/Walkthrough/S01/010.jpg) and [A Link Between Worlds](https://static.wikia.nocookie.net/zelda/images/e/e6/Witch.png). While figuring out how to decorate I made a video about [placing candles on skulls](https://www.youtube.com/watch?v=e1xp99aI0yU).
+
+#### Wait, What's Happening?
+I wanted a quest log, like most RPGs, so I cant track what the heck is going on and what I need to do next. I looked and it seems you can't update a book. So I have to `clear` the item and replace it. Since I am using mcfunctions I dont get things like string builders so I had to have multiple copies of the book. Pro tip: create an account on minecraft.tools to save your work.
+
+#### Is that it?
+I have [some code](https://github.com/kirbycope/CopeCraft/wiki/Summon-Chest-Minecart-to-Your-Head) for summoning a "Menu Chest" to the player. There is a nice video on [how to do a chest menu](https://www.youtube.com/watch?v=OOuRyx0Ipe4). I joined the guy's Discord and he said he plans on doing an updated video with  tricks he finds himself using.
+</br>
+I also have  [some code](https://github.com/kirbycope/CopeCraft/wiki/Create-Particle-Over-Your-Head) for particles over your head and [some code](https://github.com/kirbycope/CopeCraft/wiki/Hover-Item-Over-Your-Head) for an item over your head. This is so a quest marker or shop keeper... something along those lines. I like to see what is possible and then operate within those parameters.
