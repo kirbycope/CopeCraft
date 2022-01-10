@@ -59,4 +59,4 @@ execute if entity @a[scores={copecraft-quest-id=6}] run function copecraft:quest
 #execute at @a run particle minecraft:composter ~ ~2.2 ~ 0 0 0 0 0 normal
 
 # Health Defense Mana bar
-title @a actionbar ["",{"text":"100/100❤","color":"red"},{"text":"    25/25❇ Defense    ","color":"green"},{"text":"100/100✎ Mana","color":"aqua"}]
+#title @a actionbar ["",{"text":"100/100❤","color":"red"},{"text":"    25/25❇ Defense    ","color":"green"},{"text":"100/100✎ Mana","color":"aqua"}]
