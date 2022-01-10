@@ -57,3 +57,6 @@ execute if entity @a[scores={copecraft-quest-id=6}] run function copecraft:quest
 
 # Hover particle over head
 #execute at @a run particle minecraft:composter ~ ~2.2 ~ 0 0 0 0 0 normal
+
+# 100/100❤    25❇ Defense    100/100✎ Mana
+#title @a actionbar ["",{"text":"100/100\u2764","color":"red"},{"text":" \u0020 \u002025\u2747 Defense","color":"green"},{"text":" \u0020 \u0020100/100\u270e Mana","color":"aqua"}]
