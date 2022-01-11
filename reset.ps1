@@ -23,4 +23,4 @@ rm $gameDirectory\saves\CopeCraft\stats\76ca1596-ad31-456d-93eb-55 -ErrorAction 
 rm $gameDirectory\saves\CopeCraft\stats\76ca1596-ad31-456d-93eb-55e42ab91255.json -ErrorAction SilentlyContinue
 # Package Resources
 rm $gameDirectory\saves\CopeCraft\resources.zip -ErrorAction SilentlyContinue
-Compress-Archive -Path $gameDirectory\saves\CopeCraft\_resourcepack\* -DestinationPath  $gameDirectory\saves\CopeCraft\resources.zip
+Compress-Archive -Path $gameDirectory\saves\CopeCraft\_resourcepack\* -DestinationPath $gameDirectory\saves\CopeCraft\resources.zip
