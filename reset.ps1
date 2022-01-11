@@ -18,4 +18,6 @@ git restore $gameDirectory\saves\CopeCraft\region\r.-1.0.mca
 git restore $gameDirectory\saves\CopeCraft\region\r.0.-1.mca
 git restore $gameDirectory\saves\CopeCraft\region\r.0.0.mca
 rm $gameDirectory\saves\CopeCraft\session.lock
-rm $gameDirectory\saves\CopeCraft\stats\76ca1596-ad31-456d-93eb-55e42ab91255.json
+rm $gameDirectory\saves\CopeCraft\stats\76ca1596-ad31-456d-93eb-55
+rm $gameDirectory\saves\CopeCraft\resources.zip
+Compress-Archive -Path $gameDirectory\saves\CopeCraft\_resourcepack -DestinationPath  $gameDirectory\saves\CopeCraft\resources.zip
