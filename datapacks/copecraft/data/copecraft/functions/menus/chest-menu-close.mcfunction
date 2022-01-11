@@ -1,2 +1,2 @@
 # Teleport the chest minecart to a safe place
-tp @e[type=minecraft:chest_minecart] 0 320 0
+tp @e[tag=menu-chest] 0 320 0
