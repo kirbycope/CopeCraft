@@ -12,4 +12,3 @@ execute at @e[nbt={SelectedItem:{id:"minecraft:nether_star",tag:{display:{Name:'
 execute as @e[tag=menu-chest,tag=!invisible] run data merge entity @s[type=chest_minecart] {CustomDisplayTile:1,DisplayState:{Name:"minecraft:command_block",Properties:{conditional:"true",facing:"up"}},DisplayOffset:4}
 # set the tag to invisible
 execute as @e[tag=menu-chest,tag=!invisible] run tag @s add invisible
-
