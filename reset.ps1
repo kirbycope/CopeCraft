@@ -19,5 +19,6 @@ git restore $gameDirectory\saves\CopeCraft\region\r.0.-1.mca
 git restore $gameDirectory\saves\CopeCraft\region\r.0.0.mca
 rm $gameDirectory\saves\CopeCraft\session.lock -ErrorAction SilentlyContinue
 rm $gameDirectory\saves\CopeCraft\stats\76ca1596-ad31-456d-93eb-55 -ErrorAction SilentlyContinue
+# Package Resources
 rm $gameDirectory\saves\CopeCraft\resources.zip -ErrorAction SilentlyContinue
 Compress-Archive -Path $gameDirectory\saves\CopeCraft\_resourcepack -DestinationPath  $gameDirectory\saves\CopeCraft\resources.zip
