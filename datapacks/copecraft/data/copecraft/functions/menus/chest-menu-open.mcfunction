@@ -10,5 +10,5 @@ item replace entity @e[tag=menu-chest] container.13 with minecraft:barrier
 # Change block in the cart to a command block, facing up (so that the facing up resource is used)
 execute as @e[tag=menu-chest,tag=!invisible] run data merge entity @s[type=chest_minecart] {CustomDisplayTile:1,DisplayState:{Name:"minecraft:command_block",Properties:{conditional:"true",facing:"up"}}}
 
-# set the tag to invisible (so we don't change the displaytile again)
+# set the tag to invisible (so we don't change the display tile again)
 execute as @e[tag=menu-chest,tag=!invisible] run tag @s add invisible
