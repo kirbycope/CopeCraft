@@ -1,0 +1,6 @@
+{
+    "textures": {
+		"up": "minecraft:item/chest_minecart",
+		"down": "entity/chest/normal"
+	}
+}
