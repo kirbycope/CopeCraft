@@ -1,8 +1,7 @@
 {
     "variants": {
         "conditional=true,facing=up": {
-            "model": "copecraft/minecart/chest",
-            "x": 270
+            "model": "copecraft/minecart/chest"
         }
     }
 }
