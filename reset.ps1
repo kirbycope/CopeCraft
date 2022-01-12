@@ -35,8 +35,8 @@ $optionsTxt = "$gameDirectory\options.txt"
 $SEL = Select-String -Path $optionsTxt -Pattern "file/Invisible Minecart Resource Pack"
 if ($null -eq $SEL)
 {
-    $find = '"vanilla"]'
-    $replace = '"vanilla","file/Invisible Minecart Resource Pack"]'
+    $find = '"]'
+    $replace = '","file/Invisible Minecart Resource Pack"]'
     $content = Get-Content -path $optionsTxt -Raw
     $content.Replace($find, $replace) | Set-Content -Path $optionsTxt
 }
