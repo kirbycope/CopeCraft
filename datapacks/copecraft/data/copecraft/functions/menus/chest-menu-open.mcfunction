@@ -4,5 +4,8 @@ execute unless entity @e[tag=menu_chest] run execute at @s run summon minecraft:
 # Teleport the Chest Minecart to the player's face
 execute at @s run tp @e[tag=menu_chest] ~ ~1.2 ~ 
 
+# Change block in the Chest Minecart to a command block, facing up (so that the facing up resource is used)
+#data merge entity @s[type=chest_minecart] {CustomDisplayTile:1,DisplayState:{Name:"minecraft:command_block",Properties:{conditional:"true",facing:"up"}},DisplayOffset:4}
+
 # Put item in center of Chest Minecart
 item replace entity @e[tag=menu_chest] container.13 with minecraft:barrier
