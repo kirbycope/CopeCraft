@@ -28,4 +28,4 @@ Remove-Item $gameDirectory\saves\CopeCraft\stats\76ca1596-ad31-456d-93eb-55e42ab
 
 # User Loaded Resources
 Remove-Item $gameDirectory\resourcepacks\_resourcepack -Recurse -ErrorAction SilentlyContinue
-Copy-Item $gameDirectory\saves\CopeCraft\_resourcepack -Destination $gameDirectory\resourcepacks\_resourcepack -Recurse
+Copy-Item $gameDirectory\saves\CopeCraft\_resourcepack -Destination $gameDirectory\resourcepacks\Invisible Minecart Resource Pack -Recurse
