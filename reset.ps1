@@ -23,9 +23,20 @@ Remove-Item $gameDirectory\saves\CopeCraft\stats\76ca1596-ad31-456d-93eb-55 -Err
 Remove-Item $gameDirectory\saves\CopeCraft\stats\76ca1596-ad31-456d-93eb-55e42ab91255.json -ErrorAction SilentlyContinue
 
 # Save/World Resources - https://bugs.mojang.com/browse/MC-73716
-Remove-Item $gameDirectory\saves\CopeCraft\resources.zip -ErrorAction SilentlyContinue
+#Remove-Item $gameDirectory\saves\CopeCraft\resources.zip -ErrorAction SilentlyContinue
 #Compress-Archive -Path $gameDirectory\saves\CopeCraft\_resourcepack\* -DestinationPath $gameDirectory\saves\CopeCraft\resources.zip
 
 # User Loaded Resources
 Remove-Item "$gameDirectory\resourcepacks\Invisible Minecart Resource Pack" -Recurse -ErrorAction SilentlyContinue
 Copy-Item $gameDirectory\saves\CopeCraft\_resourcepack -Destination "$gameDirectory\resourcepacks\Invisible Minecart Resource Pack" -Recurse
+
+# Load Resource Pack for User (only works if game is not running)
+$optionsTxt = "$gameDirectory\options.txt"
+$SEL = Select-String -Path $optionsTxt -Pattern "file/Invisible Minecart Resource Pack"
+if ($null -eq $SEL)
+{
+    $find = '"vanilla"]'
+    $replace = '"vanilla","file/Invisible Minecart Resource Pack"]'
+    $content = Get-Content -path $optionsTxt -Raw
+    $content.Replace($find, $replace) | Set-Content -Path $optionsTxt
+}
