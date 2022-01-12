@@ -22,7 +22,7 @@ Remove-Item $gameDirectory\saves\CopeCraft\session.lock -ErrorAction SilentlyCon
 Remove-Item $gameDirectory\saves\CopeCraft\stats\76ca1596-ad31-456d-93eb-55 -ErrorAction SilentlyContinue
 Remove-Item $gameDirectory\saves\CopeCraft\stats\76ca1596-ad31-456d-93eb-55e42ab91255.json -ErrorAction SilentlyContinue
 
-# Save/World Resources
+# Save/World Resources - https://bugs.mojang.com/browse/MC-73716
 Remove-Item $gameDirectory\saves\CopeCraft\resources.zip -ErrorAction SilentlyContinue
 #Compress-Archive -Path $gameDirectory\saves\CopeCraft\_resourcepack\* -DestinationPath $gameDirectory\saves\CopeCraft\resources.zip
 
