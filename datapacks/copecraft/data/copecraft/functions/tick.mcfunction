@@ -9,7 +9,7 @@ execute as @a[tag=!init] run function copecraft:events/init-player
 # Chest Menu - Open
 execute as @a[nbt={SelectedItem:{id:"minecraft:nether_star",tag:{display:{Name:'[{"text":"Menu","italic":false}]'}}}}] run function copecraft:menus/chest-menu-open
 # Chest Menu - [Force] close
-execute as @a[nbt=!{SelectedItem:{id:"minecraft:nether_star",tag:{display:{Name:'[{"text":"Menu","italic":false}]'}}}}] run function copecraft:menus/chest-menu-close
+execute as @a[nbt=!{SelectedItem:{id:"minecraft:nether_star",tag:{display:{Name:'[{"text":"Menu","italic":false}]'}}}}] run tp @e[tag=menu_chest] 0 -250 0
 
 
 # ════ NPC(s) ════ #
