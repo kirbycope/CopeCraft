@@ -1,50 +1,45 @@
 {
     "variants": {
         "conditional=false,facing=down": {
-            "model": "minecraft:block/command_block",
+            "model": "block/command_block",
             "x": 90
-        },
-        "conditional=false,facing=east": {
-            "model": "minecraft:block/command_block",
-            "y": 90
-        },
-        "conditional=false,facing=north": {
-            "model": "minecraft:block/command_block"
-        },
-        "conditional=false,facing=south": {
-            "model": "minecraft:block/command_block",
-            "y": 180
         },
         "conditional=false,facing=up": {
-            "model": "copecraft/minecart/chest",
+            "model": "block/command_block",
             "x": 270
         },
+        "conditional=false,facing=north": {
+            "model": "block/command_block"
+        },
+        "conditional=false,facing=south": {
+            "model": "block/command_block",
+            "y": 180
+        },
         "conditional=false,facing=west": {
-            "model": "minecraft:block/command_block",
+            "model": "block/command_block",
             "y": 270
         },
-        "conditional=true,facing=down": {
-            "model": "blue/minecart/empty",
-            "x": 90
+        "conditional=false,facing=east": {
+            "model": "block/command_block"
         },
-        "conditional=true,facing=east": {
-            "model": "block/command_block_conditional",
-            "y": 90
+        "conditional=true,facing=down": {
+            "model": "blue/minecart/empty"
+        },
+        "conditional=true,facing=up": {
+            "model": "blue/minecart/chest"
         },
         "conditional=true,facing=north": {
             "model": "blue/minecart/furnace"
         },
         "conditional=true,facing=south": {
-            "model": "blue/minecart/tnt",
-            "y": 180
-        },
-        "conditional=true,facing=up": {
-            "model": "blue/minecart/chest",
-            "x": 270
+            "model": "blue/minecart/tnt"
         },
         "conditional=true,facing=west": {
-            "model": "blue/minecart/hopper",
-            "y": 270
+            "model": "blue/minecart/hopper"
+        },
+        "conditional=true,facing=east": {
+            "model": "block/command_block_conditional",
+            "y": 90
         }
     }
 }
