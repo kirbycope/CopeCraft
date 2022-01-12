@@ -1,7 +1,7 @@
 {
-	"credit": "Made with Blockbench",
+	"credit": "Made with Blockbench by @bluecommands",
 	"textures": {
-		"0": "copecraft/minecart",
+		"0": "blue/minecart_texture",
 		"1": "entity/chest/normal"
 	},
 	"elements": [
