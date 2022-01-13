@@ -16,7 +16,7 @@ scoreboard objectives add copecraft-talked-to-villager minecraft.custom:minecraf
 scoreboard players set @s copecraft-talked-to-villager 0
 
 # Chest Menu item
-item replace entity @p hotbar.8 with nether_star{display:{Name:'[{"text":"Menu","italic":false}]',Lore:['[{"text":"Use this item to open the menu.","italic":false}]']},HideFlags:1} 1
+item replace entity @p hotbar.8 with nether_star{display:{Name:'[{"text":"Menu","italic":false}]',Lore:['[{"text":"Use this item to open the menu.","italic":false}]']},HideFlags:32,MenuStar:1b} 1
 
 # Deliver letter
 give @s written_book{author:"Timothy Cope",title:"A Letter",pages:['["Greetings,\\nI regret to inform you of the death of your great uncle Eric. As next of kin, you will inherit his property at Halfhill.\\nMy condolences,\\nTimothy Cope\\n\\n     [",{"text":"Begin Quest","color": "gold","clickEvent":{"action":"run_command","value":"/trigger copecraft-trigger add 1"}},{"text":"]"}]']}

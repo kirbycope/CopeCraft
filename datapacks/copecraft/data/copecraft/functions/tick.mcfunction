@@ -6,11 +6,12 @@ execute as @a[tag=!init] run function copecraft:events/init-player
 
 # ════ Menu(s) ════ #
 
-# Chest Menu - Open
-execute as @a[nbt={SelectedItem:{id:"minecraft:nether_star",tag:{display:{Name:'[{"text":"Menu","italic":false}]'}}}}] run function copecraft:menus/chest-menu-open
-# Chest Menu - [Force] close
-execute as @a[nbt=!{SelectedItem:{id:"minecraft:nether_star",tag:{display:{Name:'[{"text":"Menu","italic":false}]'}}}}] run tp @e[tag=menu_chest] 0 -250 0
-
+# Menu Star - Ensure all  players have the Menu Star
+execute as @p[tag=init,nbt=!{Inventory:[{tag:{MenuStar:1b}}]}] run give @s nether_star{display:{Name:'[{"text":"Menu","italic":false}]',Lore:['[{"text":"Use this item to open the menu.","italic":false}]']},HideFlags:32,MenuStar:1b} 1
+# Menu Chest - Open
+execute as @a[nbt={SelectedItem:{tag:{MenuStar:1b}}}] run function copecraft:menus/chest-menu-open
+# Menu Chest - [Force] close
+execute as @a[nbt=!{SelectedItem:{tag:{MenuStar:1b}}}] run tp @e[tag=menu_chest] 0 -250 0
 
 # ════ NPC(s) ════ #
 
