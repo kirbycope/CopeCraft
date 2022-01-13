@@ -11,10 +11,10 @@ execute as @a[nbt={SelectedItem:{id:"minecraft:nether_star",tag:{display:{Name:'
 # Chest Menu - [Force] close
 execute as @a[nbt=!{SelectedItem:{id:"minecraft:nether_star",tag:{display:{Name:'[{"text":"Menu","italic":false}]'}}}}] run tp @e[tag=invisible] 0 -250 0
 # Chest Menu - Other Minecarts
+execute as @e[type=minecart,tag=!menu_chest] run data merge entity @s {CustomDisplayTile:1,DisplayState:{Name:"minecraft:command_block",Properties:{conditional:"true",facing:"down"}},DisplayOffset:4,Tags:["menu_chest"]}
 execute as @e[type=chest_minecart,tag=!menu_chest] run data merge entity @s {CustomDisplayTile:1,DisplayState:{Name:"minecraft:command_block",Properties:{conditional:"true",facing:"up"}},DisplayOffset:4,Tags:["menu_chest"]}
 execute as @e[type=furnace_minecart,tag=!menu_chest] run data merge entity @s {CustomDisplayTile:1,DisplayState:{Name:"minecraft:command_block",Properties:{conditional:"true",facing:"north"}},DisplayOffset:4,Tags:["menu_chest"]}
 execute as @e[type=hopper_minecart,tag=!menu_chest] run data merge entity @s {CustomDisplayTile:1,DisplayState:{Name:"minecraft:command_block",Properties:{conditional:"true",facing:"west"}},DisplayOffset:4,Tags:["menu_chest"]}
-execute as @e[type=minecart,tag=!menu_chest] run data merge entity @s {CustomDisplayTile:1,DisplayState:{Name:"minecraft:command_block",Properties:{conditional:"true",facing:"down"}},DisplayOffset:4,Tags:["menu_chest"]}
 execute as @e[type=tnt_minecart,tag=!menu_chest] run data merge entity @s {CustomDisplayTile:1,DisplayState:{Name:"minecraft:command_block",Properties:{conditional:"true",facing:"south"}},DisplayOffset:4,Tags:["menu_chest"]}
 
 
