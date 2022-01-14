@@ -11,7 +11,7 @@ execute as @a[tag=init] run execute store result score @s copecraft-menu-items r
 # Menu Star - Clear tossed items
 kill @e[type=item,nbt={Item:{tag:{MenuStar:1b}}}]
 # Menu Star - Give player a Menu Star if they need one
-execute as @a[tag=init] run execute if entity @s[scores={copecraft-menu-items=0}] run give @s minecraft:nether_star{display:{Name:'[{"text":"Menu","italic":false}]',Lore:['[{"text":"Use this item to open the menu.","italic":false}]']},HideFlags:32,MenuStar:1b} 1
+execute as @a[tag=init] run execute if entity @s[scores={copecraft-menu-items=0}] run give @s minecraft:nether_star{display:{Name:'[{"text":"SkyBlock Menu ","italic":false,"color":"green"},{"text":"(Right-Click)","color":"gray"}]',Lore:['[{"text":"View all of your SkyBlock","italic":false,"color":"gray"}]','[{"text":"progress, including your Skills,","italic":false,"color":"gray"}]','[{"text":"Collections, Recipes, and more!","italic":false,"color":"gray"},{"text":"","italic":false,"color":"dark_purple"}]','[{"text":"","italic":false,"color":"dark_purple"}]','[{"text":"Click to open!","italic":false,"color":"yellow"}]']},HideFlags:32,MenuStar:1b} 1
 # Menu Chest - Open
 execute as @a[nbt={SelectedItem:{tag:{MenuStar:1b}}}] run function copecraft:menus/chest-menu-open
 # Menu Chest - [Force] close
